@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+    
+   <person id="ETHAN">
+      <first-name>MALE</first-name>
+      <last-name>ASIAN AND PACIFIC ISLANDER</last-name>
+       
+         <instances>177</instances>
+         <city>41</city>
+         <state>1</state>
+         <country />
+         <zip />
+       
+   </person>
+    
+   <person id="JAYDEN">
+      <first-name>MALE</first-name>
+      <last-name>ASIAN AND PACIFIC ISLANDER</last-name>
+       
+         <instances>173</instances>
+         <city>45</city>
+         <state>2</state>
+         <country />
+         <zip />
+       
+   </person>
+    
+   <person id="RYAN">
+      <first-name>MALE</first-name>
+      <last-name>ASIAN AND PACIFIC ISLANDER</last-name>
+       
+         <instances>150</instances>
+         <city>64</city>
+         <state>3</state>
+         <country />
+         <zip />
+       
+   </person>
+    
+   <person id="JUSTIN">
+      <first-name>MALE</first-name>
+      <last-name>ASIAN AND PACIFIC ISLANDER</last-name>
+       
+         <instances>110</instances>
+         <city>105</city>
+         <state>4</state>
+         <country />
+         <zip />
+       
+   </person>
+    
+   <person id="LUCAS">
+      <first-name>MALE</first-name>
+      <last-name>ASIAN AND PACIFIC ISLANDER</last-name>
+       
+         <instances>103</instances>
+         <city>115</city>
+         <state>5</state>
+         <country />
+         <zip />
+       
+   </person>
+    
+   <person id="JASON">
+      <first-name>MALE</first-name>
+      <last-name>ASIAN AND PACIFIC ISLANDER</last-name>
+       
+         <instances>98</instances>
+         <city>134</city>
+         <state>6</state>
+         <country />
+         <zip />
+       
+   </person>
+    
+   <person id="AIDEN">
+      <first-name>MALE</first-name>
+      <last-name>ASIAN AND PACIFIC ISLANDER</last-name>
+       
+         <instances>96</instances>
+         <city>137</city>
+         <state>7</state>
+         <country />
+         <zip />
+       
+   </person>
+    
+   <person id="KEVIN">
+      <first-name>MALE</first-name>
+      <last-name>ASIAN AND PACIFIC ISLANDER</last-name>
+       
+         <instances>92</instances>
+         <city>149</city>
+         <state>8</state>
+         <country />
+         <zip />
+       
+   </person>
+    
+   <person id="ERIC">
+      <first-name>MALE</first-name>
+      <last-name>ASIAN AND PACIFIC ISLANDER</last-name>
+       
+         <instances>85</instances>
+         <city>165</city>
+         <state>9</state>
+         <country />
+         <zip />
+       
+   </person>
+    
+   <person id="DANIEL">
+      <first-name>MALE</first-name>
+      <last-name>ASIAN AND PACIFIC ISLANDER</last-name>
+       
+         <instances>84</instances>
+         <city>170</city>
+         <state>10</state>
+         <country />
+         <zip />
+       
+   </person>
+</document>

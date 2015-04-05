@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+
+   <person id="SOPHIA">
+      <first-name>FEMALE</first-name>
+      <last-name>ASIAN AND PACIFIC ISLANDER</last-name>
+       
+         <instances>119</instances>
+         <city>95</city>
+         <state>1</state>
+         <country />
+         <zip />
+      
+   </person>
+
+   <person id="CHLOE">
+      <first-name>FEMALE</first-name>
+      <last-name>ASIAN AND PACIFIC ISLANDER</last-name>
+       
+         <instances>106</instances>
+         <city>111</city>
+         <state>2</state>
+         <country />
+         <zip />
+      
+   </person>
+ 
+   <person id="EMILY">
+      <first-name>FEMALE</first-name>
+      <last-name>ASIAN AND PACIFIC ISLANDER</last-name>
+       
+         <instances>93</instances>
+         <city>145</city>
+         <state>3</state>
+         <country />
+         <zip />
+      
+   </person>
+
+   <person id="OLIVIA">
+      <first-name>FEMALE</first-name>
+      <last-name>ASIAN AND PACIFIC ISLANDER</last-name>
+       
+         <instances>89</instances>
+         <city>157</city>
+         <state>4</state>
+         <country />
+         <zip />
+      
+   </person>
+
+   <person id="EMMA">
+      <first-name>FEMALE</first-name>
+      <last-name>ASIAN AND PACIFIC ISLANDER</last-name>
+       
+         <instances>75</instances>
+         <city>194</city>
+         <state>5</state>
+         <country />
+         <zip />
+      
+   </person>
+   // Example of a template. The template is used for EACH line of the CSV file
+// and should NOT contain a document declaration:
+   <person id="ISABELLA">
+      <first-name>FEMALE</first-name>
+      <last-name>ASIAN AND PACIFIC ISLANDER</last-name>
+       
+         <instances>67</instances>
+         <city>231</city>
+         <state>6</state>
+         <country />
+         <zip />
+      
+   </person>
+
+   <person id="TIFFANY">
+      <first-name>FEMALE</first-name>
+      <last-name>ASIAN AND PACIFIC ISLANDER</last-name>
+       
+         <instances>54</instances>
+         <city>294</city>
+         <state>7</state>
+         <country />
+         <zip />
+      
+   </person>
+
+   <person id="ASHLEY">
+      <first-name>FEMALE</first-name>
+      <last-name>ASIAN AND PACIFIC ISLANDER</last-name>
+       
+         <instances>52</instances>
+         <city>312</city>
+         <state>8</state>
+         <country />
+         <zip />
+      
+   </person>
+
+   <person id="FIONA">
+      <first-name>FEMALE</first-name>
+      <last-name>ASIAN AND PACIFIC ISLANDER</last-name>
+       
+         <instances>48</instances>
+         <city>346</city>
+         <state>9</state>
+         <country />
+         <zip />
+      
+   </person>
+
+   <person id="ANGELA">
+      <first-name>FEMALE</first-name>
+      <last-name>ASIAN AND PACIFIC ISLANDER</last-name>
+       
+         <instances>47</instances>
+         <city>352</city>
+         <state>10</state>
+         <country />
+         <zip />
+      
+   </person>
+</document>

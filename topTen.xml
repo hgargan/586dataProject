@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+    
+   <node id="1">
+      <gender>MALE</gender>
+      <ethnicity>HISPANIC</ethnicity>
+      <address>
+         <name>JAYDEN</name>
+         <instances>426</instances>
+         <grouprank>1</grouprank>
+    </node>
+    
+   <node id="2">
+      <gender>FEMALE</gender>
+      <ethnicity>HISPANIC</ethnicity>
+      <address>
+         <name>ISABELLA</name>
+         <instances>331</instances>
+         <grouprank>1</grouprank>
+ 
+   </node>
+    
+   <node id="3">
+      <gender>MALE</gender>
+      <ethnicity>HISPANIC</ethnicity>
+      <address>
+         <name>JUSTIN</name>
+         <instances>310</instances>
+         <grouprank>2</grouprank>
+ 
+   </node>
+    
+   <node id="4">
+      <gender>MALE</gender>
+      <ethnicity>HISPANIC</ethnicity>
+      <address>
+         <name>JACOB</name>
+         <instances>303</instances>
+         <grouprank>3</grouprank>
+ 
+   </node>
+    
+   <node id="5">
+      <gender>MALE</gender>
+      <ethnicity>WHITE NON HISPANIC</ethnicity>
+      <address>
+         <name>MICHAEL</name>
+         <instances>292</instances>
+         <grouprank>1</grouprank>
+ 
+   </node>
+    
+   <node id="6">
+      <gender>MALE</gender>
+      <ethnicity>WHITE NON HISPANIC</ethnicity>
+      <address>
+         <name>JOSEPH</name>
+         <instances>281</instances>
+         <grouprank>2</grouprank>
+ 
+   </node>
+    
+   <node id="7">
+      <gender>MALE</gender>
+      <ethnicity>HISPANIC</ethnicity>
+      <address>
+         <name>MATTHEW</name>
+         <instances>276</instances>
+         <grouprank>4</grouprank>
+ 
+   </node>
+    
+   <node id="8">
+      <gender>MALE</gender>
+      <ethnicity>WHITE NON HISPANIC</ethnicity>
+      <address>
+         <name>JACOB</name>
+         <instances>265</instances>
+         <grouprank>3</grouprank>
+ 
+   </node>
+    
+   <node id="9">
+      <gender>MALE</gender>
+      <ethnicity>WHITE NON HISPANIC</ethnicity>
+      <address>
+         <name>DAVID</name>
+         <instances>258</instances>
+         <grouprank>4</grouprank>
+ 
+   </node>
+    
+   <node id="10">
+      <gender>MALE</gender>
+      <ethnicity>HISPANIC</ethnicity>
+      <address>
+         <name>ANGEL</name>
+         <instances>253</instances>
+         <grouprank>5</grouprank>
+ 
+   </node>
+</document>

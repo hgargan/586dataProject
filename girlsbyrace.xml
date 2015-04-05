@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+      <person id="ISABELLA">
+      <hispanic>331</hispanic>
+      <black>35</black>
+       
+         <white>160</white>
+         <asian>67</asian>
+         <total>593</total>
+         
+   </person>
+      <person id="SOPHIA">
+      <hispanic>223</hispanic>
+      <black>30</black>
+       
+         <white>180</white>
+         <asian>119</asian>
+         <total>552</total>
+         
+   </person>
+      <person id="OLIVIA">
+      <hispanic>86</hispanic>
+      <black>52</black>
+       
+         <white>213</white>
+         <asian>89</asian>
+         <total>440</total>
+         
+   </person>
+      <person id="EMMA">
+      <hispanic>114</hispanic>
+      <black>15</black>
+       
+         <white>213</white>
+         <asian>75</asian>
+         <total>417</total>
+         
+   </person>
+      <person id="MIA">
+      <hispanic>229</hispanic>
+      <black>36</black>
+       
+         <white>116</white>
+         <asian>36</asian>
+         <total>417</total>
+         
+   </person>
+      <person id="EMILY">
+      <hispanic>162</hispanic>
+      <black>30</black>
+       
+         <white>116</white>
+         <asian>93</asian>
+         <total>401</total>
+         
+   </person>
+      <person id="MADISON">
+      <hispanic>122</hispanic>
+      <black>176</black>
+       
+         <white>57</white>
+         <asian>19</asian>
+         <total>374</total>
+         
+   </person>
+      <person id="LEAH">
+      <hispanic>123</hispanic>
+      <black>39</black>
+       
+         <white>183</white>
+         <asian>16</asian>
+         <total>361</total>
+         
+   </person>
+      <person id="SARAH">
+      <hispanic>53</hispanic>
+      <black>40</black>
+       
+         <white>177</white>
+         <asian>38</asian>
+         <total>308</total>
+         
+   </person>
+      <person id="SOFIA">
+      <hispanic>165</hispanic>
+      <black>0</black>
+       
+         <white>122</white>
+         <asian>19</asian>
+         <total>306</total>
+         
+   </person>
+      <person id="ASHLEY">
+      <hispanic>190</hispanic>
+      <black>16</black>
+       
+         <white>20</white>
+         <asian>52</asian>
+         <total>278</total>
+         
+   </person>
+      <person id="VICTORIA">
+      <hispanic>114</hispanic>
+      <black>36</black>
+       
+         <white>84</white>
+         <asian>22</asian>
+         <total>256</total>
+         
+   </person>
+      <person id="SAMANTHA">
+      <hispanic>100</hispanic>
+      <black>27</black>
+       
+         <white>74</white>
+         <asian>27</asian>
+         <total>228</total>
+         
+   </person>
+      <person id="ZOE">
+      <hispanic>65</hispanic>
+      <black>43</black>
+       
+         <white>81</white>
+         <asian>25</asian>
+         <total>214</total>
+         
+   </person>
+      <person id="GABRIELLA">
+      <hispanic>86</hispanic>
+      <black>24</black>
+       
+         <white>102</white>
+         <asian>0</asian>
+         <total>212</total>
+         
+   </person>
+      <person id="HAILEY">
+      <hispanic>126</hispanic>
+      <black>31</black>
+       
+         <white>34</white>
+         <asian>16</asian>
+         <total>207</total>
+         
+   </person>
+      <person id="KAYLA">
+      <hispanic>62</hispanic>
+      <black>78</black>
+       
+         <white>45</white>
+         <asian>21</asian>
+         <total>206</total>
+         
+   </person>
+      <person id="ELIZABETH">
+      <hispanic>63</hispanic>
+      <black>22</black>
+       
+         <white>100</white>
+         <asian>15</asian>
+         <total>200</total>
+         
+   </person>
+      <person id="BRIANNA">
+      <hispanic>114</hispanic>
+      <black>38</black>
+       
+         <white>32</white>
+         <asian>13</asian>
+         <total>197</total>
+         
+   </person>
+      <person id="MAYA">
+      <hispanic>49</hispanic>
+      <black>25</black>
+       
+         <white>94</white>
+         <asian>27</asian>
+         <total>195</total>
+         
+   </person>
+</document>

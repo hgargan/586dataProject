@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Page Title</title>
+    <link href="bootstrap.min.css" rel="stylesheet"/>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<script>
+  var instances = []
+  var names = []
+   $(document).ready(function()
+      {
+
+     $.ajax({
+		type: "GET",
+		url: "boysHisp.xml",
+		dataType: "xml",
+		success: parseXML});
+	
+	
+	function parseXML(xml) {
+                    
+
+        $(xml).find('person').each(function(i, person){
+            var $person = $(this);
+	    instances.push(parseInt($person.find('instances').text()));
+            names.push($person.attr('id'));
+            
+	
+        });
+	console.log(names);
+	    buildChart1(xml);
+    }
+  
+  function buildChart1(xml) {
+	var chart1 = new Highcharts.Chart({
+        chart: {
+            renderTo: 'chart-1',
+            type: 'column'
+        },
+        title: {
+            text: 'Most popular names for Hispanic boys'
+        },
+        xAxis: {
+            categories: names,
+        },
+        yAxis: {
+            title: {
+                text: 'Instances'
+            }
+        },
+        series: [{
+            name: 'Instances',
+            data: instances,
+        }]
+    });
+  }
+        });
+  
+</script>
+</head>
+<body>
+<div id="chart-1"></div>
+</body>
+</html>

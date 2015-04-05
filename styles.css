@@ -1,0 +1,17 @@
+.name-categories {
+    list-style-type: none;
+    display: inline;
+    text-align: center;
+
+}
+
+.name-categories li {
+    display: inline;
+    text-align: center;
+    padding: 2%;
+}
+
+#categories-explainer {
+    text-align: center;
+    border-top: 1px solid #000;
+}

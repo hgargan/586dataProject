@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+       <person id="ESTHER">
+      <first-name>FEMALE</first-name>
+      <last-name>WHITE NON HISPANIC</last-name>
+       
+         <instances>224</instances>
+         <city>15</city>
+         <state>1</state>
+         <country />
+         <zip />
+       
+   </person>
+       <person id="EMMA">
+      <first-name>FEMALE</first-name>
+      <last-name>WHITE NON HISPANIC</last-name>
+       
+         <instances>213</instances>
+         <city>20</city>
+         <state>2</state>
+         <country />
+         <zip />
+       
+   </person>
+       <person id="OLIVIA">
+      <first-name>FEMALE</first-name>
+      <last-name>WHITE NON HISPANIC</last-name>
+       
+         <instances>213</instances>
+         <city>21</city>
+         <state>2</state>
+         <country />
+         <zip />
+       
+   </person>
+       <person id="LEAH">
+      <first-name>FEMALE</first-name>
+      <last-name>WHITE NON HISPANIC</last-name>
+       
+         <instances>183</instances>
+         <city>32</city>
+         <state>3</state>
+         <country />
+         <zip />
+       
+   </person>
+       <person id="SOPHIA">
+      <first-name>FEMALE</first-name>
+      <last-name>WHITE NON HISPANIC</last-name>
+       
+         <instances>180</instances>
+         <city>38</city>
+         <state>4</state>
+         <country />
+         <zip />
+       
+   </person>
+       <person id="CHAYA">
+      <first-name>FEMALE</first-name>
+      <last-name>WHITE NON HISPANIC</last-name>
+       
+         <instances>178</instances>
+         <city>39</city>
+         <state>5</state>
+         <country />
+         <zip />
+       
+   </person>
+       <person id="SARAH">
+      <first-name>FEMALE</first-name>
+      <last-name>WHITE NON HISPANIC</last-name>
+       
+         <instances>177</instances>
+         <city>42</city>
+         <state>6</state>
+         <country />
+         <zip />
+       
+   </person>
+       <person id="RACHEL">
+      <first-name>FEMALE</first-name>
+      <last-name>WHITE NON HISPANIC</last-name>
+       
+         <instances>171</instances>
+         <city>49</city>
+         <state>7</state>
+         <country />
+         <zip />
+       
+   </person>
+       <person id="AVA">
+      <first-name>FEMALE</first-name>
+      <last-name>WHITE NON HISPANIC</last-name>
+       
+         <instances>162</instances>
+         <city>55</city>
+         <state>8</state>
+         <country />
+         <zip />
+       
+   </person>
+       <person id="ISABELLA">
+      <first-name>FEMALE</first-name>
+      <last-name>WHITE NON HISPANIC</last-name>
+       
+         <instances>160</instances>
+         <city>56</city>
+         <state>9</state>
+         <country />
+         <zip />
+       
+   </person>
+</document>

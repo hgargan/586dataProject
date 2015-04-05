@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>
+ 
+   <person id="MICHAEL">
+      <first-name>MALE</first-name>
+      <last-name>WHITE NON HISPANIC</last-name>
+       
+         <instances>292</instances>
+         <city>5</city>
+         <state>1</state>
+         <country />
+         <zip />
+       
+   </person>
+ 
+   <person id="JOSEPH">
+      <first-name>MALE</first-name>
+      <last-name>WHITE NON HISPANIC</last-name>
+       
+         <instances>281</instances>
+         <city>6</city>
+         <state>2</state>
+         <country />
+         <zip />
+       
+   </person>
+ 
+   <person id="JACOB">
+      <first-name>MALE</first-name>
+      <last-name>WHITE NON HISPANIC</last-name>
+       
+         <instances>265</instances>
+         <city>8</city>
+         <state>3</state>
+         <country />
+         <zip />
+       
+   </person>
+ 
+   <person id="DAVID">
+      <first-name>MALE</first-name>
+      <last-name>WHITE NON HISPANIC</last-name>
+       
+         <instances>258</instances>
+         <city>9</city>
+         <state>4</state>
+         <country />
+         <zip />
+       
+   </person>
+ 
+   <person id="BENJAMIN">
+      <first-name>MALE</first-name>
+      <last-name>WHITE NON HISPANIC</last-name>
+       
+         <instances>230</instances>
+         <city>13</city>
+         <state>5</state>
+         <country />
+         <zip />
+       
+   </person>
+ 
+   <person id="MOSHE">
+      <first-name>MALE</first-name>
+      <last-name>WHITE NON HISPANIC</last-name>
+       
+         <instances>224</instances>
+         <city>16</city>
+         <state>6</state>
+         <country />
+         <zip />
+       
+   </person>
+ 
+   <person id="DANIEL">
+      <first-name>MALE</first-name>
+      <last-name>WHITE NON HISPANIC</last-name>
+       
+         <instances>210</instances>
+         <city>22</city>
+         <state>7</state>
+         <country />
+         <zip />
+       
+   </person>
+ 
+   <person id="ALEXANDER">
+      <first-name>MALE</first-name>
+      <last-name>WHITE NON HISPANIC</last-name>
+       
+         <instances>197</instances>
+         <city>24</city>
+         <state>8</state>
+         <country />
+         <zip />
+       
+   </person>
+ 
+   <person id="MATTHEW">
+      <first-name>MALE</first-name>
+      <last-name>WHITE NON HISPANIC</last-name>
+       
+         <instances>189</instances>
+         <city>27</city>
+         <state>9</state>
+         <country />
+         <zip />
+       
+   </person>
+ 
+   <person id="JACK">
+      <first-name>MALE</first-name>
+      <last-name>WHITE NON HISPANIC</last-name>
+       
+         <instances>183</instances>
+         <city>33</city>
+         <state>10</state>
+         <country />
+         <zip />
+       
+   </person>
+</document>

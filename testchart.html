@@ -1,0 +1,331 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Page Title</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<script>
+		var instances = []
+		var names = []
+		var instances2 = []
+		var names2 = []
+		        
+var names3 = []
+var names4 = []
+var girlsAfAm = []
+var girlsHisp = []
+var girlsWhite = []
+var girlsAsAm = []
+var boysAfAm = []
+var boysHisp = []
+var boysWhite = []
+var boysAsAm = []
+		
+    $(document).ready(function()
+      {
+        
+    //calling first chart
+	
+        $.ajax({
+		type: "GET",
+		url: "top20boys.xml",
+		dataType: "xml",
+		success: parseXML});	
+	
+	function parseXML(xml) {
+                    
+              //  $('body').append('<h1>Most popular names</h1>');
+               // $('body').append('<dl />');
+
+        $(xml).find('person').each(function(i, person){
+            var $person = $(this);
+	    instances.push(parseInt($person.find('instances').text()));
+	    names.push($person.attr('name'));
+            
+            
+	
+        });
+    //calling second chart
+        
+        $.ajax({
+		type: "GET",
+		url: "overallgirls.xml",
+		dataType: "xml",
+		success: parseXML2});
+	
+	
+	function parseXML2(xml) {
+                    
+
+        $(xml).find('person').each(function(i, person){
+            var $person = $(this);
+	    instances2.push(parseInt($person.find('instances').text()));
+	    names2.push($person.attr('id'));
+	
+        });
+    }
+    
+    //calling third chart 
+     $.ajax({
+		type: "GET",
+		url: "girlsbyrace.xml",
+		dataType: "xml",
+		success: parseXML3});
+	
+	
+	function parseXML3(xml) {
+                    
+
+        $(xml).find('person').each(function(i, person){
+            var $person = $(this);
+	    girlsWhite.push(parseInt($person.find('white').text()));
+            girlsAfAm.push(parseInt($person.find('black').text()));
+            girlsHisp.push(parseInt($person.find('hispanic').text()));
+            girlsAsAm.push(parseInt($person.find('asian').text()));
+            names3.push($person.attr('id'));
+            
+        });
+    }
+    //calling fourth chart 
+    $.ajax({
+		type: "GET",
+		url: "boysbyrace.xml",
+		dataType: "xml",
+		success: parseXML4});
+	
+	
+	function parseXML4(xml) {
+                    
+
+        $(xml).find('person').each(function(i, person){
+            var $person = $(this);
+	    boysWhite.push(parseInt($person.find('white').text()));
+            boysAfAm.push(parseInt($person.find('black').text()));
+            boysHisp.push(parseInt($person.find('hispanic').text()));
+            boysAsAm.push(parseInt($person.find('asian').text()));
+            
+	
+        });
+    }
+	
+	console.log(instances);
+	console.log(names);
+        console.log(boysHisp);
+        console.log(boysAfAm);
+        console.log(girlsAfAm)
+	    buildChart1(xml);
+            buildChart2(xml);
+            buildChart3(xml);
+            buildChart4(xml);
+    }
+	
+	
+    function buildChart1(xml) {
+	var chart1 = new Highcharts.Chart({
+        chart: {
+            renderTo: 'chart-1',
+            type: 'column'
+        },
+        title: {
+            text: 'Most popular boys names (overall)'
+        },
+        xAxis: {
+            categories: names,
+        },
+        yAxis: {
+            title: {
+                text: 'Instances'
+            }
+        },
+        series: [{
+            name: 'Instances',
+            data: instances,
+        }]
+    });
+    };
+
+	
+    function buildChart2(xml) {
+	var chart2 = new Highcharts.Chart({
+        chart: {
+            renderTo: 'chart-2',
+            type: 'column'
+        },
+        title: {
+            text: 'Most popular girls names (overall)'
+        },
+        xAxis: {
+            categories: names2,
+        },
+        yAxis: {
+            title: {
+                text: 'Instances'
+            }
+        },
+        series: [{
+            name: 'Instances',
+            data: instances2,
+        }]
+    });
+    }
+
+	
+        
+function buildChart3(xml) {
+        var chart3 = new Highcharts.Chart({
+        chart: {
+            type: 'column',
+            renderTo: 'chart-3'
+        },
+        title: {
+            text: 'Top Girls Names, Broken Down by Ethnicity'
+        },
+        xAxis: {
+            categories: names3
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Instances'
+            },
+            stackLabels: {
+                enabled: true,
+                style: {
+                    fontWeight: 'bold',
+                    color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
+                }
+            }
+        },
+        legend: {
+            align: 'right',
+            x: -30,
+            verticalAlign: 'top',
+            y: 25,
+            floating: true,
+            backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || 'white',
+            borderColor: '#CCC',
+            borderWidth: 1,
+            shadow: false
+        },
+        tooltip: {
+            formatter: function () {
+                return '<b>' + this.x + '</b><br/>' +
+                    this.series.name + ': ' + this.y + '<br/>' +
+                    'Total: ' + this.point.stackTotal;
+            }
+        },
+        plotOptions: {
+            column: {
+                stacking: 'normal',
+                dataLabels: {
+                    enabled: false,
+                    color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white',
+                    style: {
+                        textShadow: '0 0 3px black'
+                    }
+                }
+            }
+        },
+        series: [{
+            name: 'Non-Hispanic Black',
+            data: girlsAfAm
+        }, {
+            name: 'Hispanic',
+            data: girlsHisp
+        }, {
+            name: 'Non-Hispanic White',
+            data: girlsWhite
+        }, {
+            name: 'Asian and Pacific',
+            data: girlsAsAm
+        }]
+    });
+};
+
+	
+        
+function buildChart4(xml) {
+        var chart4 = new Highcharts.Chart({
+        chart: {
+            type: 'column',
+            renderTo: 'chart-4'
+        },
+        title: {
+            text: 'Top Boys Names, Broken Down by Ethnicity'
+        },
+        xAxis: {
+            categories: names
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Instances'
+            },
+            stackLabels: {
+                enabled: true,
+                style: {
+                    fontWeight: 'bold',
+                    color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
+                }
+            }
+        },
+        legend: {
+            align: 'right',
+            x: -30,
+            verticalAlign: 'top',
+            y: 25,
+            floating: true,
+            backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || 'white',
+            borderColor: '#CCC',
+            borderWidth: 1,
+            shadow: false
+        },
+        tooltip: {
+            formatter: function () {
+                return '<b>' + this.x + '</b><br/>' +
+                    this.series.name + ': ' + this.y + '<br/>' +
+                    'Total: ' + this.point.stackTotal;
+            }
+        },
+        plotOptions: {
+            column: {
+                stacking: 'normal',
+                dataLabels: {
+                    enabled: false,
+                    color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white',
+                    style: {
+                        textShadow: '0 0 3px black'
+                    }
+                }
+            }
+        },
+        series: [{
+            name: 'Non-Hispanic Black',
+            data: boysAfAm
+        }, {
+            name: 'Hispanic',
+            data: boysHisp
+        }, {
+            name: 'Non-Hispanic White',
+            data: boysWhite
+        }, {
+            name: 'Asian and Pacific',
+            data: boysAsAm
+        }]
+    });
+};
+    
+});
+    
+    
+
+		
+</script>
+</head>
+<body>
+<div id="chart-1"></div>
+<div id="chart-2"></div>
+<div id="chart-3"></div>
+<div id="chart-4"></div>
+</body>
+</html>

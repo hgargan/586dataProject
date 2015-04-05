@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document>   
+   <person id="JAYDEN">
+      <hispanic>426</hispanic>
+      <black>184</black>
+       
+         <white>173</white>
+         <asian>39</asian>
+         <total>822</total>
+          
+   </person>
+  
+   <person id="JACOB">
+      <hispanic>303</hispanic>
+      <black>82</black>
+       
+         <white>265</white>
+         <asian>49</asian>
+         <total>699</total>
+          
+   </person>
+  
+   <person id="ETHAN">
+      <hispanic>251</hispanic>
+      <black>124</black>
+       
+         <white>118</white>
+         <asian>177</asian>
+         <total>670</total>
+          
+   </person>
+  
+   <person id="MATTHEW">
+      <hispanic>276</hispanic>
+      <black>59</black>
+       
+         <white>189</white>
+         <asian>74</asian>
+         <total>598</total>
+          
+   </person>
+  
+   <person id="MICHAEL">
+      <hispanic>174</hispanic>
+      <black>93</black>
+       
+         <white>292</white>
+         <asian>38</asian>
+         <total>597</total>
+          
+   </person>
+  
+   <person id="DANIEL">
+      <hispanic>221</hispanic>
+      <black>81</black>
+       
+         <white>210</white>
+         <asian>84</asian>
+         <total>596</total>
+          
+   </person>
+  
+   <person id="JUSTIN">
+      <hispanic>310</hispanic>
+      <black>85</black>
+       
+         <white>46</white>
+         <asian>110</asian>
+         <total>551</total>
+          
+   </person>
+  
+   <person id="DAVID">
+      <hispanic>178</hispanic>
+      <black>84</black>
+       
+         <white>258</white>
+         <asian>28</asian>
+         <total>548</total>
+          
+   </person>
+  
+   <person id="AIDEN">
+      <hispanic>188</hispanic>
+      <black>167</black>
+       
+         <white>78</white>
+         <asian>96</asian>
+         <total>529</total>
+          
+   </person>
+  
+   <person id="ALEXANDER">
+      <hispanic>219</hispanic>
+      <black>39</black>
+       
+         <white>197</white>
+         <asian>47</asian>
+         <total>502</total>
+          
+   </person>
+  
+   <person id="JOSEPH">
+      <hispanic>140</hispanic>
+      <black>35</black>
+       
+         <white>281</white>
+         <asian>21</asian>
+         <total>477</total>
+          
+   </person>
+  
+   <person id="ANTHONY">
+      <hispanic>207</hispanic>
+      <black>66</black>
+       
+         <white>135</white>
+         <asian>46</asian>
+         <total>454</total>
+          
+   </person>
+  
+   <person id="JOSHUA">
+      <hispanic>190</hispanic>
+      <black>128</black>
+       
+         <white>89</white>
+         <asian>36</asian>
+         <total>443</total>
+          
+   </person>
+  
+   <person id="RYAN">
+      <hispanic>122</hispanic>
+      <black>41</black>
+       
+         <white>126</white>
+         <asian>150</asian>
+         <total>439</total>
+          
+   </person>
+  
+   <person id="CHRISTOPHER">
+      <hispanic>239</hispanic>
+      <black>80</black>
+       
+         <white>92</white>
+         <asian>21</asian>
+         <total>432</total>
+          
+   </person>
+  
+   <person id="NOAH">
+      <hispanic>157</hispanic>
+      <black>91</black>
+       
+         <white>99</white>
+         <asian>19</asian>
+         <total>366</total>
+          
+   </person>
+  
+   <person id="LUCAS">
+      <hispanic>128</hispanic>
+      <black>12</black>
+       
+         <white>122</white>
+         <asian>103</asian>
+         <total>365</total>
+          
+   </person>
+  
+   <person id="MASON">
+      <hispanic>173</hispanic>
+      <black>83</black>
+       
+         <white>75</white>
+         <asian>34</asian>
+         <total>365</total>
+          
+   </person>
+  
+   <person id="ANDREW">
+      <hispanic>125</hispanic>
+      <black>36</black>
+       
+         <white>133</white>
+         <asian>70</asian>
+         <total>364</total>
+          
+   </person>
+  
+   <person id="WILLIAM">
+      <hispanic>98</hispanic>
+      <black>27</black>
+       
+         <white>170</white>
+         <asian>66</asian>
+         <total>361</total>
+          
+   </person>
+</document>
