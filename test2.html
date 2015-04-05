@@ -1,5 +1,6 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
+<meta charset="utf-8">
 <head>
     <title>Page Title</title>
     <link href="bootstrap.min.css" rel="stylesheet">
@@ -272,13 +273,30 @@ function buildChart4(xml) {
         $('#chart-load-area').load(url);
         return false;
     });
+     $('#nationwide a').click(function() {
+	var url2=$(this).attr('href');
+	$('chart-load-area-2').load(url2);
+	return false;
+     });
   });
     </script>
 <body>
-
-<div id="chart-3"></div>
+		<h1>New York Names</h1>
+<div class="row">
+<div class="col-xs-12 col-sm-6">
+<div id="intro">
+		<p>These charts reflect naming data gathered in 2011 for births in New York City. Some names are popular across the four demographic groups
+		proivded (Madison, for instance), while others (like Angel), at least in 2011, appear to have more ethnically specific appeal.</p>
+		<p>It should also be noted that these data are not complete. Only names that occurred at least 10 times over the course of the year were included in this survey.</p>
+</div>
+</div>
+<div class="col-xs-12 col-sm-6">
+<div id="chart-5" style="min-width: 250px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+</div>
+</div>
 <div id="chart-4"></div>
-<div id="categories-explainer">Click on any of the categories below to view the graphs associated with them.</div>
+<div id="chart-3"></div>
+<div id="categories-explainer">Click on any of the categories below to view the top names for that demographic.</div>
 <ul id="name-categories">
 		<div class="row">
 		<div class="col-xs-12 col-sm-3">	
@@ -306,10 +324,21 @@ function buildChart4(xml) {
 		<li><a href="boysAsAm.html">Asian or Pacific Islander Boys</a></li>
 		</div>
 		</div>
+		<hr>
+		<div id="nationwide">
+		<div class="row">
+		<div class="col-xs-6">	
+		<li><a href="nationWideGirls.html">All girls, nationwide</a></li>
+		</div>
+		<div class="col-xs-6">	
+		<li><a href="boysAsAm.html">All boys, nationwide</a></li>
+		</div>
+		</div>
+		</div>
+
 </ul>
 <div id="chart-load-area"></div>
-<div id="chart-1"></div>
-<div id="chart-2"></div>
-<div id="chart-5" style="min-width: 310px; height: 400px; max-width: 600px; margin: 0 auto"></div>
+<div id="chart-load-area-2"></div>
+
 </body>
 </html>
