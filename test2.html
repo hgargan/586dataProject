@@ -71,59 +71,31 @@ $(function () {
 function buildChart3(xml) {
 	var chart3 = new Highcharts.Chart({
 	chart: {
-	    type: 'column',
+            type: 'bar',
 	    renderTo: 'chart-3'
-	},
-	title: {
-	    text: 'Top Girls Names, Broken Down by Ethnicity'
-	},
-	xAxis: {
-	    categories: names3
-	},
-	yAxis: {
-	    min: 0,
-	    title: {
-		text: 'Instances'
-	    },
-	    stackLabels: {
-		enabled: true,
-		style: {
-		    fontWeight: 'bold',
-		    color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
-		}
-	    }
-	},
-	legend: {
-	    align: 'right',
-	    x: -30,
-	    verticalAlign: 'top',
-	    y: 25,
-	    floating: true,
-	    backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || 'white',
-	    borderColor: '#CCC',
-	    borderWidth: 1,
-	    shadow: false
-	},
-	tooltip: {
-	    formatter: function () {
-		return '<b>' + this.x + '</b><br/>' +
-		    this.series.name + ': ' + this.y + '<br/>' +
-		    'Total: ' + this.point.stackTotal;
-	    }
-	},
-	plotOptions: {
-	    column: {
-		stacking: 'normal',
-		dataLabels: {
-		    enabled: false,
-		    color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white',
-		    style: {
-			textShadow: '0 0 3px black'
-		    }
-		}
-	    }
-	},
-	series: [{
+        },
+        title: {
+            text: 'Top girls names, broken down by ethnicity'
+        },
+        xAxis: {
+            categories: names3
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Instances'
+            }
+        },
+        legend: {
+		itemMarginTop: 10,
+		itemMarginBottom: 10,
+        },
+        plotOptions: {
+            series: {
+                stacking: 'normal'
+            }
+        },
+       series: [{
 	    name: 'Non-Hispanic Black',
 	    data: girlsAfAm
 	}, {
@@ -135,8 +107,8 @@ function buildChart3(xml) {
 	}, {
 	    name: 'Asian and Pacific',
 	    data: girlsAsAm
-	}]
-    });
+        }]
+	});
 };
 
 
@@ -170,59 +142,32 @@ function buildChart3(xml) {
 function buildChart4(xml) {
 	var chart4 = new Highcharts.Chart({
 	chart: {
-	    type: 'column',
+            type: 'bar',
 	    renderTo: 'chart-4'
-	},
-	title: {
-	    text: 'Top Boys Names, Broken Down by Ethnicity'
-	},
-	xAxis: {
-	    categories: names
-	},
-	yAxis: {
-	    min: 0,
-	    title: {
-		text: 'Instances'
-	    },
-	    stackLabels: {
-		enabled: true,
-		style: {
-		    fontWeight: 'bold',
-		    color: (Highcharts.theme && Highcharts.theme.textColor) || 'gray'
-		}
-	    }
-	},
-	legend: {
-	    align: 'right',
-	    x: -30,
-	    verticalAlign: 'top',
-	    y: 25,
-	    floating: true,
-	    backgroundColor: (Highcharts.theme && Highcharts.theme.background2) || 'white',
-	    borderColor: '#CCC',
-	    borderWidth: 1,
-	    shadow: false
-	},
-	tooltip: {
-	    formatter: function () {
-		return '<b>' + this.x + '</b><br/>' +
-		    this.series.name + ': ' + this.y + '<br/>' +
-		    'Total: ' + this.point.stackTotal;
-	    }
-	},
-	plotOptions: {
-	    column: {
-		stacking: 'normal',
-		dataLabels: {
-		    enabled: false,
-		    color: (Highcharts.theme && Highcharts.theme.dataLabelsColor) || 'white',
-		    style: {
-			textShadow: '0 0 3px black'
-		    }
-		}
-	    }
-	},
-	series: [{
+        },
+        title: {
+            text: 'Top boys names, broken down by ethnicity'
+        },
+        xAxis: {
+            categories: names
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Instances'
+            }
+        },
+        legend: {
+            reversed: false,
+	    itemMarginTop: 10,
+            itemMarginBottom: 10
+        },
+        plotOptions: {
+            series: {
+                stacking: 'normal'
+            }
+        },
+       series: [{
 	    name: 'Non-Hispanic Black',
 	    data: boysAfAm
 	}, {
@@ -234,7 +179,7 @@ function buildChart4(xml) {
 	}, {
 	    name: 'Asian and Pacific',
 	    data: boysAsAm
-	}]
+        }]
     });
 };
 
@@ -250,6 +195,10 @@ function buildChart4(xml) {
 	    tooltip: {
 		pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
 	    },
+	    legend: {
+		itemMarginTop: 10,
+		itemMarginBottom: 10
+        },
 	    plotOptions: {
 		pie: {
 		    allowPointSelect: true,
@@ -329,12 +278,14 @@ function buildChart4(xml) {
 	return false;
  
     });
-     $('#nationwide-list a').click(function() {
-	var url2=$(this).attr('href');
-	$('#chart-load-area-2').load(url2);
-	return false;	
-     });
+      $('#nationwide-list a').click(function() {
+	var url=$(this).attr('href');
+	$('#chart-load-area-2').load(url);
+	return false;
+      });
+     
   });
+
     </script>
 <body>
 <header>
@@ -343,7 +294,8 @@ function buildChart4(xml) {
 <div class="row">
 <div class="col-xs-12 col-sm-6">
 <div id="intro">
-		<p>These charts reflect naming data gathered in 2011 by the City of New York for births in the city. Some names are popular across the four demographic groups
+		<p><strong><em>2011 was the first year in the United States non-white children accounted for the majority of births.</strong></em></p>
+		<p>These charts reflect naming data gathered that year by the City of New York for births in the city. Some names are popular across the four demographic groups
 		proivded (Madison, for instance), while others (like Angel), at least in 2011, appear to have more ethnically specific appeal.</p>
 		<p>It should also be noted that these data are not complete. Only names that occurred at least 10 times over the course of the year were included in this survey. The threshold for national naming-trend data is five names.</p>
 </div>
@@ -355,6 +307,7 @@ function buildChart4(xml) {
 <div id="chart-4"></div>
 <div id="chart-3"></div>
 <div class="categories-explainer">Click on any of the categories below to view the top names for that demographic.</div>
+<div id="chart-load-area"></div>
 <ul id="name-categories">
 		<div class="row">
 		<div class="col-xs-12 col-sm-3">	
@@ -384,7 +337,6 @@ function buildChart4(xml) {
 		</div>
 
 </ul>
-<div id="chart-load-area"></div>
 
 <div class="row nationwide">
 <div class="col-xs-12 col-sm-6">

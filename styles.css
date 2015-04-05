@@ -93,20 +93,11 @@ li {
 
 #chart-load-area-2 {
     padding: 5% 5% 0 0;
-    border: 1px dotted #000;
     min-height: 300px;
     height: 100%;
     
 }
 
-#chart-load-area {
-    
-}
-
-
-#highcharts21 rect {
-    fill: #000000;
-}
 
 #allData {
 
@@ -115,3 +106,10 @@ li {
 #allData_wrapper {
 }
 
+#chart-4 {
+    min-height: 600px;
+}
+
+#chart-3 {
+    min-height: 600px;
+}
