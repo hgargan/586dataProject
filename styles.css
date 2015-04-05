@@ -1,25 +1,61 @@
+@font-face {
+    font-family: WaPographicstext;
+    src: url(fonts/poyntertext-sansregular.ttf);
+}
+
+@font-face {
+    font-family: WaPographicsheader;
+    src: url(fonts/poyntertext-sansblack.ttf);
+}
+
+body {
+    font-family: WaPographicstext;
+    padding: 5%;
+}
+
 h1 {
-    text-align: center;
+    text-align: left;
+    font-family: WaPographicsheader;
+}
+
+header {
+    border-bottom: 1px solid #B1BDC1;
+    margin-bottom: 5%;
+}
+
+.highcharts-title {
+    font-family: WaPographicsheader;
+}
+
+.highcharts-legend-item  {
+    font-family: WaPographicstext;
+    height: 50px;
+}
+.highcharts-xaxis-labels {
+    font-family: WaPographicstext;
+}
+
+.highcharts-yaxis-labels {
+    font-family: WaPographicstext;
 }
 
 #intro {
-    padding: 15% 5% 5% 5%;
-    font-size: 100%;
+    font-size: 125%;
 }
 
-.name-categories ul {
+#name-categories ul {
     list-style-type: none;
     display: inline;
-    text-align: center;
-    font-size: .8em;
+    text-align: left;
+    font-size: 1em;
 
 }
 
-.name-categories li {
+#name-categories li {
     display: inline;
-    text-align: center;
+    text-align: left;
     list-style-type: none;
-    padding: 2%;
+    padding: 2% 0 2% 0;
 }
 
 .categories-explainer {
@@ -28,22 +64,34 @@ h1 {
 }
 
 .nationwide {
-    padding: 5%;
+    padding: 5% 0 5% 0;
 }
 
 ul {
     list-style-type: none;
-    text-align: center;
+    text-align: left;
 }
 
 li {
     list-style-type: none;
-    text-align: center;
+    text-align: left;
     padding: 2%;
-    font-size: .9em;
+    font-size: 1em;
 }
 
-#chart-load-area-2{
+
+
+
+#chart-load-area-2 .highcharts-legend {
+    display: none;
+}
+
+#chart-load-area .highcharts-legend {
+    display: none;
+    
+}
+
+#chart-load-area-2 {
     padding: 5% 5% 0 0;
     border: 1px dotted #000;
     min-height: 300px;
@@ -51,11 +99,19 @@ li {
     
 }
 
-#chart-load-area-2 .highcharts-legend {
-    display: none;
+#chart-load-area {
+    
+}
+
+
+#highcharts21 rect {
+    fill: #000000;
 }
 
 #allData {
-    padding: 5%;
+
+}
+
+#allData_wrapper {
 }
 
