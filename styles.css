@@ -22,9 +22,13 @@ h1 {
     padding: 2%;
 }
 
-#categories-explainer {
+.categories-explainer {
     text-align: center;
     padding: 2%;
+}
+
+.nationwide {
+    padding: 5%;
 }
 
 ul {
@@ -37,5 +41,21 @@ li {
     text-align: center;
     padding: 2%;
     font-size: .9em;
+}
+
+#chart-load-area-2{
+    padding: 5% 5% 0 0;
+    border: 1px dotted #000;
+    min-height: 300px;
+    height: 100%;
+    
+}
+
+#chart-load-area-2 .highcharts-legend {
+    display: none;
+}
+
+#allData {
+    padding: 5%;
 }
 

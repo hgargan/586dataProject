@@ -3,10 +3,12 @@
 <meta charset="utf-8">
 <head>
     <title>Page Title</title>
-    <link href="bootstrap.min.css" rel="stylesheet">
-    <link href="StyleSheet.css" rel="stylesheet" type="text/css" />
+    <link href="bootstrap.min.css" rel="stylesheet"/>
     <link href="styles.css" rel="stylesheet" type="text/css" />
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+    <link href="http://cdn.datatables.net/1.10.6/css/jquery.dataTables.min.css" rel="stylesheet"/>
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+    <script src="http://cdn.datatables.net/1.10.6/js/jquery.dataTables.min.js" type="text/javascript"></script>
+
 <script src="http://code.highcharts.com/highcharts.js"></script>
 
 <script>
@@ -25,10 +27,13 @@ var boysAfAm = []
 var boysHisp = []
 var boysWhite = []
 var boysAsAm = []
+
+ $('#allData').dataTable( {
+		"ajax": "allData.json"
+	} );
 		
     $(document).ready(function()
       {
-
      $.ajax({
 		type: "GET",
 		url: "girlsbyrace.xml",
@@ -250,7 +255,7 @@ function buildChart4(xml) {
             },
             series: [{
                 type: 'pie',
-                name: '2011 NYC Births',
+                name: '2011 NYC Births by Ethnicity',
                 data: [
                      ['Non-Hispanic Black',  10541 ],
                 ['Non-Hispanic White',     24878],
@@ -259,7 +264,47 @@ function buildChart4(xml) {
                 ]
             }]
         });
+	
+	        $('#chart-6').highcharts({
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false
+            },
+            title: {
+                text: '2011 U.S. Births By Ethnicity'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                type: 'pie',
+                name: '2011 U.S. Births',
+                data: [
+                     ['Non-Hispanic Black',  13.7 ],
+                ['Non-Hispanic White',     49.6],
+                ['Hispanic',   26.3],
+                ['Asian and Pacific',     4.4],
+		['Other', 6]
+                ]
+            }]
+        });
+		
+  $('#allData').dataTable( {
+        "ajax": "allData.json"
+});
     });
+
         
 
 		
@@ -272,11 +317,12 @@ function buildChart4(xml) {
         var url=$(this).attr('href');
         $('#chart-load-area').load(url);
         return false;
+ 
     });
-     $('#nationwide a').click(function() {
+     $('#nationwide-list a').click(function() {
 	var url2=$(this).attr('href');
-	$('chart-load-area-2').load(url2);
-	return false;
+	$('#chart-load-area-2').load(url2);
+	return false;	
      });
   });
     </script>
@@ -296,7 +342,7 @@ function buildChart4(xml) {
 </div>
 <div id="chart-4"></div>
 <div id="chart-3"></div>
-<div id="categories-explainer">Click on any of the categories below to view the top names for that demographic.</div>
+<div class="categories-explainer">Click on any of the categories below to view the top names for that demographic.</div>
 <ul id="name-categories">
 		<div class="row">
 		<div class="col-xs-12 col-sm-3">	
@@ -324,21 +370,55 @@ function buildChart4(xml) {
 		<li><a href="boysAsAm.html">Asian or Pacific Islander Boys</a></li>
 		</div>
 		</div>
-		<hr>
-		<div id="nationwide">
-		<div class="row">
-		<div class="col-xs-6">	
-		<li><a href="nationWideGirls.html">All girls, nationwide</a></li>
-		</div>
-		<div class="col-xs-6">	
-		<li><a href="boysAsAm.html">All boys, nationwide</a></li>
-		</div>
-		</div>
-		</div>
 
 </ul>
 <div id="chart-load-area"></div>
+
+<div class="row nationwide">
+<div class="col-xs-12 col-sm-6">
+<div id="chart-6"></div>
+</div>
+<div class="col-xs-12 col-sm-6">
+<div class="categories-explainer">New York represents a fairly cosmopolitan mixture of cultures and names, but its most popular names still differ from national trends. </div>
+<div id="nationwide-list">
+		<div class="row">
+		<div class="col-xs-6">	
+		<li><a href="nationWideGirls.html">Top girls names, nationwide</a></li>
+		</div>
+		<div class="col-xs-6">	
+		<li><a href="nationWideBoys.html">Top boys names, nationwide</a></li>
+		</div>
+		</div>
+</div>
 <div id="chart-load-area-2"></div>
+<div id="chart-load-area-3"></div>
+</div>
+</div>
+<table id="allData" class="display" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Ethnicity</th>
+                <th>Instances</th>
+                <th>Overall Rank</th>
+                <th>Group Rank</th>
+            </tr>
+        </thead>
+ 
+        <tfoot>
+            <tr>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Ethnicity</th>
+                <th>Instances</th>
+                <th>Overall Rank</th>
+                <th>Group Rank</th>
+            </tr>
+        </tfoot>
+    </table>
+
+
 
 </body>
 </html>

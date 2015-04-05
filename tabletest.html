@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<meta charset="utf-8"></meta>
+<head>
+<!-- DataTables CSS -->
+<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.6/css/jquery.dataTables.css">
+  
+<!-- jQuery -->
+<script type="text/javascript" charset="utf8" src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+  
+<!-- DataTables -->
+<script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.6/js/jquery.dataTables.js"></script>
+  
+<script>
+$(document).ready(function() {
+	$('#allData').dataTable( {
+		"ajax": "allData.json"
+	} );
+        console.log('DOM ready');
+} );
+
+	
+
+</script>
+</head>
+<body>
+        <table id="allData" class="display" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Ethnicity</th>
+                <th>Instances</th>
+                <th>Overall Rank</th>
+                <th>Group Rank</th>
+            </tr>
+        </thead>
+ 
+        <tfoot>
+            <tr>
+                <th>Name</th>
+                <th>Gender</th>
+                <th>Ethnicity</th>
+                <th>Instances</th>
+                <th>Overall Rank</th>
+                <th>Group Rank</th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
