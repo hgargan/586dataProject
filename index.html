@@ -10,15 +10,11 @@
     <script src="http://cdn.datatables.net/1.10.6/js/jquery.dataTables.min.js" type="text/javascript"></script>
 
 <script src="http://code.highcharts.com/highcharts.js"></script>
-
 <script>
-		var instances = []
-		var names = []
-		var instances2 = []
-		var names2 = []
-			
+var instances = []
+var names = []
+var instances2 = []			
 var names3 = []
-var names4 = []
 var girlsAfAm = []
 var girlsHisp = []
 var girlsWhite = []
@@ -28,17 +24,17 @@ var boysHisp = []
 var boysWhite = []
 var boysAsAm = []
 
-$('#allData').dataTable( {
-"ajax": "allData.json",
-    "order": [[ 6, 'asc' ], [ 1, 'asc' ]]
-} );
+
+
+
+	
 		
     $(document).ready(function()
       {
 		
 $(function () {
     Highcharts.setOptions({
-	colors: ['#E69275', '#9C8E83', '#B1BDC1', '#ACBAC8','#D12B38', 'E5BB7F', '#ABC9A5', '#B08C6E', ]
+	colors: ['#E69275', '#9C8E83', '#E5BB7F', '#ACBAC8','#D12B38', '#ABC9A5', '#B08C6E', ]
     });
     
 });
@@ -262,12 +258,17 @@ function buildChart4(xml) {
 		
   $('#allData').dataTable( {
 	"ajax": "allData.json"
+	
 });
+    $('#boysData').dataTable( {
+"ajax": "boysData.json",
+} );
+     $('#girlsData').dataTable( {
+"ajax": "girlsData.json",
+} );
     });
 
-	
-
-		
+			
 </script>
 </head>
  <script type="text/javascript" charset="utf-8">
@@ -312,8 +313,7 @@ $('#nationwide-list a').click(function() {
 </div>
 <div id="chart-4"></div>
 <div id="chart-3"></div>
-<div id="chart-load-area"></div>
-<div class="categories-explainer"><h3>Breaking It Down</h3><p>Click on any of the categories below to view the top names for that demographic.</p></div>
+<div class="categories-explainer"><div id="chart-load-area"></div><h3>Breaking It Down</h3><p>Click on any of the categories below to view the top names for that demographic.</p></div>
 <ul id="name-categories">
 		<div class="row">
 		<div class="col-xs-12 col-sm-3">	
@@ -349,7 +349,9 @@ $('#nationwide-list a').click(function() {
 <div id="chart-6"></div>
 </div>
 <div class="col-xs-12 col-sm-6">
-<div class="categories-explainer"><h3>The Bigger Picture</h3>New York represents a fairly cosmopolitan mixture of cultures and names, but its most popular names still differ from national trends. </div>
+<div class="categories-explainer"><h3>The Bigger Picture</h3>
+    <p>New York represents a fairly cosmopolitan mixture of cultures and names, but its most popular names still differ from national trends. </p>
+    <p>Click below to view charts for the entire U.S. or compare top names in the tables underneath.</p></div>
 <div id="nationwide-list">
 		<div class="row">
 		<div class="col-xs-6">	
@@ -361,6 +363,50 @@ $('#nationwide-list a').click(function() {
 		</div>
 </div>
 <div id="loadarea"></div>
+</div>
+</div>
+<div class="row">
+    <div class="col-xs-12 col-sm-6">
+	<h3>Boys</h3>
+<table id="boysData" class="display" cellspacing="0" width="100%">
+	<thead>
+	    <tr>
+		<th>Rank</th>
+		<th>New York</th>
+		<th>United States</th>
+	    </tr>
+	</thead>
+ 
+	<tfoot>
+	    <tr>
+		<th>Rank</th>
+		<th>New York</th>
+		<th>United States</th>
+	    
+	    </tr>
+	</tfoot>
+</table>
+    </div>
+<div class="col-xs-12 col-sm-6">
+    <h3>Girls</h3>
+    <table id="girlsData" class="display" cellspacing="0" width="100%">
+	<thead>
+	    <tr>
+		<th>Rank</th>
+		<th>New York</th>
+		<th>United States</th>
+	    </tr>
+	</thead>
+ 
+	<tfoot>
+	    <tr>
+		<th>Rank</th>
+		<th>New York</th>
+		<th>United States</th>
+	    
+	    </tr>
+	</tfoot>
+</table>
 </div>
 </div>
 <div class="row">
