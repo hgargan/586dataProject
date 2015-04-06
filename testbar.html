@@ -1,6 +1,6 @@
 <HTML>
     <head>
-         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
 <script src="http://code.highcharts.com/highcharts.js"></script>
 <script src="http://code.highcharts.com/modules/exporting.js"></script>
 
@@ -15,7 +15,7 @@ $(function () {
             text: 'Stacked bar chart'
         },
         xAxis: {
-            categories: ['Apples', 'Oranges', 'Pears', 'Grapes', 'Bananas']
+            categories: names2
         },
         yAxis: {
             min: 0,
@@ -31,15 +31,18 @@ $(function () {
                 stacking: 'normal'
             }
         },
-        series: [{
-            name: 'John',
-            data: [5, 3, 4, 7, 2]
-        }, {
-            name: 'Jane',
-            data: [2, 2, 3, 2, 1]
-        }, {
-            name: 'Joe',
-            data: [3, 4, 4, 2, 5]
+       series: [{
+	    name: 'Non-Hispanic Black',
+	    data: girlsAfAm
+	}, {
+	    name: 'Hispanic',
+	    data: girlsHisp
+	}, {
+	    name: 'Non-Hispanic White',
+	    data: girlsWhite
+	}, {
+	    name: 'Asian and Pacific',
+	    data: girlsAsAm
         }]
     });
 });
