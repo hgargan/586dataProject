@@ -28,9 +28,10 @@ var boysHisp = []
 var boysWhite = []
 var boysAsAm = []
 
- $('#allData').dataTable( {
-		"ajax": "allData.json"
-	} );
+$('#allData').dataTable( {
+"ajax": "allData.json",
+    "order": [[ 6, 'asc' ], [ 1, 'asc' ]]
+} );
 		
     $(document).ready(function()
       {
@@ -75,7 +76,7 @@ function buildChart3(xml) {
 	    renderTo: 'chart-3'
         },
         title: {
-            text: 'Top girls names, broken down by ethnicity'
+            text: 'Top girls names, by ethnicity'
         },
         xAxis: {
             categories: names3
@@ -146,7 +147,7 @@ function buildChart4(xml) {
 	    renderTo: 'chart-4'
         },
         title: {
-            text: 'Top boys names, broken down by ethnicity'
+            text: 'Top boys names, by ethnicity'
         },
         xAxis: {
             categories: names
@@ -278,15 +279,19 @@ function buildChart4(xml) {
 	return false;
  
     });
-      $('#nationwide-list a').click(function() {
-	var url=$(this).attr('href');
-	$('#chart-load-area-2').load(url);
-	return false;
-      });
      
   });
 
     </script>
+ <script>
+$(document).ready(function() {
+$('#nationwide-list a').click(function() {
+	var url2=$(this).attr('href');
+	$('#loadarea').load(url2);
+	return false;
+      });
+});
+ </script>
 <body>
 <header>
 <h1>New York Names</h1>
@@ -354,11 +359,15 @@ function buildChart4(xml) {
 		</div>
 		</div>
 </div>
-<div id="chart-load-area-2"></div>
+<div id="loadarea"></div>
 </div>
 </div>
 <div class="row">
 		<div class="col-xs-12">
+				<div class="table-explainer"><h3>All Data</h3>
+				<p>Below is the complete dataset used to generate the above graphs. Click on each column title to organize the data by that attribute.</p>
+				<p>The column on the far right provides measures of relative frequency, or how often a given name can be expected to occur within a given demographic group. This allows us to account for variance in the size of demographic groups when determining which names are most prominent.</p>
+				<p>For example: In New York City, nearly four out of every 100 non-Hispanic black girls born in 2011 could expect to be named Madison.</p></div>
 <table id="allData" class="display" cellspacing="0" width="100%">
 	<thead>
 	    <tr>
@@ -368,6 +377,7 @@ function buildChart4(xml) {
 		<th>Instances</th>
 		<th>Overall Rank</th>
 		<th>Group Rank</th>
+		<th data-class-name="priority">Relative Frequency</th>
 	    </tr>
 	</thead>
  
@@ -379,6 +389,7 @@ function buildChart4(xml) {
 		<th>Instances</th>
 		<th>Overall Rank</th>
 		<th>Group Rank</th>
+		<th data-class-name="priority">Relative Frequency</th>
 	    </tr>
 	</tfoot>
     </table>

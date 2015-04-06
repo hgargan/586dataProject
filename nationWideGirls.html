@@ -6,7 +6,6 @@
     <link href="bootstrap.min.css" rel="stylesheet"/>
     <link href="styles.css" rel="stylesheet" type="text/css" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
-<script src="http://code.highcharts.com/highcharts.js"></script>
 <script>
   var instances = []
   var names = []
@@ -37,7 +36,7 @@
   function buildChart1(xml) {
 	var chart1 = new Highcharts.Chart({
         chart: {
-            renderTo: 'chart-1',
+            renderTo: 'chart-10',
             type: 'column'
         },
         title: {
@@ -62,6 +61,6 @@
 </script>
 </head>
 <body>
-<div id="chart-1"></div>
+<div id="chart-10"></div>
 </body>
 </html>
